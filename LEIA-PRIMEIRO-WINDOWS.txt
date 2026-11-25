@@ -1,0 +1,80 @@
+COGNIX v10.0 - INSTALACAO FACIL NO WINDOWS
+
+1. Baixe o ZIP completo e clique em EXTRair TUDO (nao execute dentro do ZIP).
+2. Abra a pasta Cognix-v10.0 extraida.
+3. Execute o arquivo iniciar-cognix.bat com duplo clique.
+4. Instale Python 3.11 ou mais recente se o inicializador solicitar.
+5. Aguarde o navegador abrir no endereco informado na janela.
+   O inicializador procura uma porta livre de 8000 a 8100 automaticamente.
+6. Mantenha a janela preta aberta enquanto o sistema estiver funcionando.
+
+Login e senha: data/ACESSOS-DEMO-LOCAL.txt.
+
+COMO USAR O ENEM:
+- Entre com a conta da coordenacao da sua escola.
+- No menu IMPORTACAO ENEM, importe um ano com Internet.
+- Em BANCO DE QUESTOES, filtre a origem ENEM API.
+- Use CLASSIFICAR para vincular a questao interdisciplinar a Fisica/Quimica/Biologia da sua escola.
+- O professor vera somente as materias que leciona naquela escola.
+- Questao importada ainda nao esta autorizada para provas: exige revisao e direitos verificados.
+
+ATUALIZACAO:
+Faca backup do banco data/cognix.sqlite3 da versao antiga antes de trocar de pasta.
+Se tiver cadastrado dados novos, copie o seu banco antigo para a pasta da v10.0 ANTES de executar.
+Copie tambem data/question_uploads se ja utilizou importacao de arquivos na v10.
+O banco incluido no ZIP e uma DEMONSTRACAO: nao substitua seus dados de trabalho sem copia de seguranca.
+
+NOVIDADES v10.0:
+- Banco de questoes com Meu acervo, Acervo da escola e ENEM.
+- Importacao DOCX, PDF com texto e texto colado; revisao em lote e retomada segura.
+- Identidades, convites institucionais, transferencia autorizada e encerramento de vinculo.
+- Backup/restauracao conjunta do banco e anexos: scripts/backup_restore_v10.py.
+- Para convites reais, configure SMTP (veja README.md). Sem SMTP, nao ha envio.
+
+HISTORICO v9.9:
+- Professor: Preparar revisao da proxima aula, editar e salvar em Minha semana.
+- Diagnostico rapido abre o montador de provas em modo rascunho; nao salva automaticamente.
+- Caderno de erros por questao/alternativa de respostas da plataforma, com hipoteses docentes.
+- Devolutiva individual editavel e relatorio pedagogico CSV.
+- Logicas de media e escopo dos registros revistas, espacamentos e layout melhorados.
+- Leitura de gabarito em papel: SOMENTE ESTUDO DE VIABILIDADE, SEM LEITOR IMPLEMENTADO.
+  Veja docs/CONCEITO-LEITURA-DE-GABARITOS.md.
+
+RECURSOS HERDADOS v9.8:
+- Trilha ENEM do aluno: objetivo, horas, dias da semana, modo de estudo e ate tres assuntos em foco.
+- Vocacao: gostos, atividades, valores, ambientes, nove areas de carreira e explicacoes.
+- Notas da escola: simule "Quanto preciso tirar" dentro da disciplina sem alterar notas reais.
+- Desempenho e cadastro do aluno: medias por Exatas, Natureza, Humanas e Linguagens,
+  topicos criticos explicados e plano de estudo.
+- Mapa das prioridades da turma: motivos, alunos com dificuldade e sugestoes pedagogicas.
+- "Saiba mais" para detalhes, com previa explicativa logo abaixo de cada titulo.
+
+RECURSOS HERDADOS v9.7:
+- Desempenho e diagnostico por topico unificados numa pagina visual, com detalhamento por indicador.
+- Coordenacao: dois filtros independentes, Turma e Topico, ambos com opcao Geral.
+- Analises em intervalos reais e registros de evidencias qualitativas e intervencoes.
+- Executar diagnostico com IA aparece depois dos dados; sem chave, regras locais identificadas.
+- Minha semana: novas aulas e alteracoes sao gravadas no banco. Alunos veem o mesmo cronograma.
+- Formularios, editores e provas nao salvas sao mantidos ao mudar de aba enquanto o navegador estiver aberto.
+- Trilha ENEM somente na 3a serie.
+- Menu lateral corrigido para nao sobrepor usuario e botao Sair.
+
+RECURSOS HERDADOS v9.6:
+- Professor: alertas de assuntos criticos e alunos para acompanhamento aparecem primeiro.
+- Diagnostico: analise e plano de revisao; IA real somente com chave configurada.
+- Provas: sorteio sem salvar, edicao de questoes, confirmacao e descarte de previas.
+- Trilha ENEM: visao geral da sala como padrao, com opcao de aluno individual.
+- Aluno: acesso a Meu cronograma; Coordenacao: visao institucional e cadastros.
+- Tema escuro (fundo preto) e filtros mais compactos.
+
+CORRECAO DA v9.5.1:
+Se aparecerem linhas TIME_WAIT ao executar netstat, isso nao significa
+que um servidor esteja ativo. O novo inicializador verifica se consegue
+reservar a porta e mostra qualquer erro de Python na propria janela.
+
+Se houver erro no inicio, envie uma foto da janela preta aberta.
+Se aparecer "Failed to fetch", a comunicacao com o servidor foi interrompida:
+MANTENHA A JANELA PRETA ABERTA e abra o endereco exato mostrado nela.
+Nao execute frontend/index.html diretamente do disco (file://).
+As contas de demonstracao de cada perfil estao em data/ACESSOS-DEMO-LOCAL.txt.
+Informacoes adicionais e limites do prototipo: README.md.

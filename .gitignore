@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.venv/
+data/*.sqlite3
+data/*.sqlite3-*
+data/ACESSOS-DEMO-LOCAL.txt
+data/ACESSOS-ALUNOS-DEMO.csv
+data/ACESSOS-PROFESSORES-DEMO.txt
+data/question_uploads/
+*.zip
+
+.streamlit/secrets.toml
